@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal War</title>
+    <style type="text/css">
+        .rangka {
+            font-size: 16pt;
+            background-color: black;
+            border: solid red 3px;
+            color: white;
+            width: 20em;
+            height: 18em;
+            padding: auto, 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .player {
+            width: 8em;
+            border: solid red 1px;
+            text-align: center;
+            height: 18em;
+        }
+        
+        .komputer {
+            width: 8em;
+            border: solid red 1px;
+            text-align: center;
+            height: 18em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <Div class="header">
+        <h1 style="">Game animal war sederhana</h1>
+    </Div>
+    <div id="content" class="rangka">
+        <div class="player" value="player">
+            <p>PLAYER</p>
+            <h3 id="resultmu"></h3>
+            <div id="gambar-p"></div>
+        </div>
+
+        <h3 style="padding-top: 30%;">VS</h3>
+
+        <div class="komputer" value="komputer">
+            <p>COMPUTER</p>
+            <h3 id="komputer"></h3>
+            <div id="gambar-c"></div>
+        </div>
+    </div>
+    <div id="embuh"></div>
+    <br> <br>
+    <p id="result" style="width: 20em; height: 3em; border: solid darkorange 3px; text-align: center; font-size: 16pt; padding: auto; font-weight: 600;"></p>
+    <p>Pilihan tersisa : gajah, semut, dan orang</p>
+    <input type="text" id="nama" class="input">
+    <input type="button" value="serang!" onclick='attack();' name="print" class="inputs">
+    <input type="button" value="refresh" onclick="refresh();">
+    <script src="main.js"></script>
+</body>
+
+</html>
